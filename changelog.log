@@ -3,3 +3,9 @@ Start of the project
 
 11/06/2022
 Fixing my mess
+Commented most of main.js
+Added a upgrades tab
+Added a stats tab
+Added about tab
+Created adjavascripts (Antimatter Dimensions Javacripts) to hold the copied code from it, with its license
+Made that for every autoclicker you buy, the autoclicker click time will drop 10ms

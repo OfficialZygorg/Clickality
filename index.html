@@ -9,13 +9,30 @@
 <div class="tab" id="clicksAmount"></div><br>
 <div class="tab">
     <button class="tablinks active" onclick="openTab(event, 'clickTab')">Generators</button>
+    <button class="tablinks" hidden id="clickerUpgradesTab" onclick="openTab(event, 'clickerUpgrades')">Upgrades</button>
+    <button class="tablinks" onclick="openTab(event, 'stats')">Stats</button>
     <button class="tablinks" onclick="openTab(event, 'options')">Options</button>
     <button class="tablinks" onclick="openTab(event, 'about')">About</button>
 </div><br>
 <div id="clickTab" style="display: block;" class="tabName">
-    <div class="button" onclick="clickButton()" id="clickButton"></div>
-    <div class="button" style="display: none;" id="upgradeClicker" onclick="upgradeClicker()"></div>
-    <div class="button" style="display: none;" id="autoClicker" onclick="autoClicker()"></div>
+    <div class="container">
+        <div class="tab">
+            <div class="button" onclick="clickButton()" id="clickButton"></div>
+        </div>
+        <div class="tab">
+            <div class="button" style="display: none;" id="upgradeClicker" onclick="upgradeClicker()"></div>
+        </div>
+        <div class="tab">
+            <div class="button" style="display: none;" id="autoClicker" onclick="autoClicker()"></div>
+        </div>
+    </div>
+</div>
+<div id="clickerUpgrades" hidden class="tabName">
+    <div class="container">
+        <div class="tab">
+            <div class="button" style="display: none;" id="autoClickerUpgrade1" onclick="autoClickerUpgrade1()">Upgrade 1: Your clicks are 25% more powerful</div>
+        </div>
+    </div>
 </div>
 <div id="options" hidden class="tabName">
     <div class="tab">
@@ -23,10 +40,26 @@
         <button onclick="save_game()">Save</button>
     </div>
 </div>
+<div id="stats" hidden class="tabName">
+    <div class="container">
+        <div class="tab">
+            <div class="statsButton">
+                <div id="autoClickersBought"></div>
+                <div id="autoClickerTimer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="about" hidden class="tabName">
+    <div class="tab">
+        Welcome to Materiality Reborn, a remake from 0 project that im doing for fun and boredom!
+    </div>
+</div>
 </body>
 <script src="javascripts/break_eternity.js" charset="utf-8" type="text/javascript"></script>
-<script src="javascripts/save.js" charset="utf-8" type="text/javascript"></script>
-<script src="javascripts/tabUtilities.js" charset="utf-8" type="text/javascript"></script>
+<script src="scriptpacks/js-snackbar/js-snackbar.js" charset="utf-8" type="text/javascript"></script>
+<script src="adjavascripts/format.js" charset="utf-8" type="text/javascript"></script>
+<script src="adjavascripts/save.js" charset="utf-8" type="text/javascript"></script>
+<script src="adjavascripts/tabUtilities.js" charset="utf-8" type="text/javascript"></script>
 <script src="javascripts/utilities.js" charset="utf-8" type="text/javascript"></script>
 <script src="javascripts/main.js" charset="utf-8" type="text/javascript"></script>
-<script src="scriptpacks/js-snackbar/js-snackbar.js" charset="utf-8" type="text/javascript"></script>

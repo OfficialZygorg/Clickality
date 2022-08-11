@@ -11,8 +11,27 @@
     border-color: gray;
     background-color: whitesmoke;
     text-align: center;
-    width: 120px;
-    padding: 10px;
+    width: auto;
+    min-width: 75px;
+    max-width: 150px;
+    min-height: 15px;
+    padding: auto;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+.statsButton{
+    display: block;
+    border: 2px solid;
+    color: black;
+    border-color: gray;
+    background-color: whitesmoke;
+    text-align: center;
+    width: auto;
+    min-width: 75px;
+    min-height: 15px;
+    padding: auto;
     font-size: 1em;
     cursor: pointer;
     border-radius: 5px;
