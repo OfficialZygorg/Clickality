@@ -1,0 +1,70 @@
+*{
+    box-sizing: content-box;
+}
+.tab{
+    text-align: center;
+}
+.button{
+    display: block;
+    border: 2px solid;
+    color: black;
+    border-color: gray;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 120px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+.box{
+    display: block;
+    border: 1px solid;
+    color: black;
+    border-color: gray;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+}
+.unlocked{
+    display: block;
+    border: 1px solid;
+    color: black;
+    border-color: green;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+    margin: 2px 2px;
+}
+.locked{
+    display: block;
+    border: 1px solid;
+    color: black;
+    border-color: red;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+    margin: 2px 2px;
+}
+.container{
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+}

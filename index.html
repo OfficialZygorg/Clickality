@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Materiality Reborn</title>
+    <meta name="materiality-reborn" content="a redo of my other game">
+    <link rel="stylesheet" type="text/css" href="scriptpacks/js-snackbar/js-snackbar.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="tab" id="clicksAmount"></div><br>
+<div class="tab">
+    <button class="tablinks active" onclick="openTab(event, 'clickTab')">Generators</button>
+    <button class="tablinks" onclick="openTab(event, 'options')">Options</button>
+    <button class="tablinks" onclick="openTab(event, 'about')">About</button>
+</div><br>
+<div id="clickTab" style="display: block;" class="tabName">
+    <div class="button" onclick="clickButton()" id="clickButton"></div>
+    <div class="button" style="display: none;" id="upgradeClicker" onclick="upgradeClicker()"></div>
+    <div class="button" style="display: none;" id="autoClicker" onclick="autoClicker()"></div>
+</div>
+<div id="options" hidden class="tabName">
+    <div class="tab">
+        <button onclick="delete_save()">Clear Save</button>
+        <button onclick="save_game()">Save</button>
+    </div>
+</div>
+</body>
+<script src="javascripts/break_eternity.js" charset="utf-8" type="text/javascript"></script>
+<script src="javascripts/save.js" charset="utf-8" type="text/javascript"></script>
+<script src="javascripts/tabUtilities.js" charset="utf-8" type="text/javascript"></script>
+<script src="javascripts/utilities.js" charset="utf-8" type="text/javascript"></script>
+<script src="javascripts/main.js" charset="utf-8" type="text/javascript"></script>
+<script src="scriptpacks/js-snackbar/js-snackbar.js" charset="utf-8" type="text/javascript"></script>
