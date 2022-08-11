@@ -77,7 +77,7 @@ function upgradeClicker() {
   }
 }
 //If you can buy upgrades
-function canYouBuyIt() { //Making this work when i try to buy the 2nd or higher autoclicker
+function canYouBuyIt() { //Fixing
   if (player.clicks.gte(clicker.upgradeCost)) {
     document.getElementById("upgradeClicker").style.borderColor = "green";
   } else document.getElementById("upgradeClicker").style.borderColor = "red";
